@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		556E43451B6A53660047EA69 /* libdispatch-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E43391B6A53660047EA69 /* libdispatch-lite.a */; };
+		556E436A1B6A53BC0047EA69 /* tlazy_instance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43571B6A53BC0047EA69 /* tlazy_instance.cpp */; };
+		556E436B1B6A53BC0047EA69 /* tmessage_loop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43591B6A53BC0047EA69 /* tmessage_loop.cpp */; };
+		556E436C1B6A53BC0047EA69 /* tmessage_loop_libevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E435B1B6A53BC0047EA69 /* tmessage_loop_libevent.cpp */; };
+		556E436D1B6A53BC0047EA69 /* tmessage_pump_default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E435E1B6A53BC0047EA69 /* tmessage_pump_default.cpp */; };
+		556E436E1B6A53BC0047EA69 /* trun_loop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43601B6A53BC0047EA69 /* trun_loop.cpp */; };
+		556E436F1B6A53BC0047EA69 /* tdispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43631B6A53BC0047EA69 /* tdispatch.cpp */; };
+		556E43701B6A53BC0047EA69 /* tthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43651B6A53BC0047EA69 /* tthread.cpp */; };
+		556E43711B6A53BC0047EA69 /* ttime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43681B6A53BC0047EA69 /* ttime.cpp */; };
+		556E43731B6A53CA0047EA69 /* testdispatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556E43721B6A53CA0047EA69 /* testdispatch.mm */; };
+		556E43751B6A544F0047EA69 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E43741B6A544F0047EA69 /* libevent.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		556E43461B6A53660047EA69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556E43311B6A53660047EA69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556E43381B6A53660047EA69;
+			remoteInfo = "dispatch-lite";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		556E43371B6A53660047EA69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		556E43391B6A53660047EA69 /* libdispatch-lite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libdispatch-lite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556E43441B6A53660047EA69 /* dispatch-liteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dispatch-liteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556E434A1B6A53660047EA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556E43541B6A53BC0047EA69 /* tbasictypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbasictypes.h; sourceTree = "<group>"; };
+		556E43551B6A53BC0047EA69 /* tlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tlog.h; sourceTree = "<group>"; };
+		556E43571B6A53BC0047EA69 /* tlazy_instance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tlazy_instance.cpp; sourceTree = "<group>"; };
+		556E43581B6A53BC0047EA69 /* tlazy_instance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tlazy_instance.h; sourceTree = "<group>"; };
+		556E43591B6A53BC0047EA69 /* tmessage_loop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmessage_loop.cpp; sourceTree = "<group>"; };
+		556E435A1B6A53BC0047EA69 /* tmessage_loop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmessage_loop.h; sourceTree = "<group>"; };
+		556E435B1B6A53BC0047EA69 /* tmessage_loop_libevent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmessage_loop_libevent.cpp; sourceTree = "<group>"; };
+		556E435C1B6A53BC0047EA69 /* tmessage_loop_libevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmessage_loop_libevent.h; sourceTree = "<group>"; };
+		556E435D1B6A53BC0047EA69 /* tmessage_pump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmessage_pump.h; sourceTree = "<group>"; };
+		556E435E1B6A53BC0047EA69 /* tmessage_pump_default.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmessage_pump_default.cpp; sourceTree = "<group>"; };
+		556E435F1B6A53BC0047EA69 /* tmessage_pump_default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmessage_pump_default.h; sourceTree = "<group>"; };
+		556E43601B6A53BC0047EA69 /* trun_loop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trun_loop.cpp; sourceTree = "<group>"; };
+		556E43611B6A53BC0047EA69 /* trun_loop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trun_loop.h; sourceTree = "<group>"; };
+		556E43631B6A53BC0047EA69 /* tdispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tdispatch.cpp; sourceTree = "<group>"; };
+		556E43641B6A53BC0047EA69 /* tdispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tdispatch.h; sourceTree = "<group>"; };
+		556E43651B6A53BC0047EA69 /* tthread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tthread.cpp; sourceTree = "<group>"; };
+		556E43661B6A53BC0047EA69 /* tthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tthread.h; sourceTree = "<group>"; };
+		556E43681B6A53BC0047EA69 /* ttime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ttime.cpp; sourceTree = "<group>"; };
+		556E43691B6A53BC0047EA69 /* ttime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttime.h; sourceTree = "<group>"; };
+		556E43721B6A53CA0047EA69 /* testdispatch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = testdispatch.mm; sourceTree = "<group>"; };
+		556E43741B6A544F0047EA69 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = ../Frameworks/Libevent/lib/libevent.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		556E43361B6A53660047EA69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556E43411B6A53660047EA69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556E43751B6A544F0047EA69 /* libevent.a in Frameworks */,
+				556E43451B6A53660047EA69 /* libdispatch-lite.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		556E43301B6A53660047EA69 = {
+			isa = PBXGroup;
+			children = (
+				556E433B1B6A53660047EA69 /* dispatch-lite */,
+				556E43481B6A53660047EA69 /* dispatch-liteTests */,
+				556E433A1B6A53660047EA69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		556E433A1B6A53660047EA69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556E43391B6A53660047EA69 /* libdispatch-lite.a */,
+				556E43441B6A53660047EA69 /* dispatch-liteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556E433B1B6A53660047EA69 /* dispatch-lite */ = {
+			isa = PBXGroup;
+			children = (
+				556E43531B6A53BC0047EA69 /* Base */,
+				556E43561B6A53BC0047EA69 /* MessageLoop */,
+				556E43621B6A53BC0047EA69 /* Thread */,
+				556E43671B6A53BC0047EA69 /* Time */,
+			);
+			path = "dispatch-lite";
+			sourceTree = "<group>";
+		};
+		556E43481B6A53660047EA69 /* dispatch-liteTests */ = {
+			isa = PBXGroup;
+			children = (
+				556E43721B6A53CA0047EA69 /* testdispatch.mm */,
+				556E43741B6A544F0047EA69 /* libevent.a */,
+				556E43491B6A53660047EA69 /* Supporting Files */,
+			);
+			path = "dispatch-liteTests";
+			sourceTree = "<group>";
+		};
+		556E43491B6A53660047EA69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				556E434A1B6A53660047EA69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		556E43531B6A53BC0047EA69 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				556E43541B6A53BC0047EA69 /* tbasictypes.h */,
+				556E43551B6A53BC0047EA69 /* tlog.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		556E43561B6A53BC0047EA69 /* MessageLoop */ = {
+			isa = PBXGroup;
+			children = (
+				556E43571B6A53BC0047EA69 /* tlazy_instance.cpp */,
+				556E43581B6A53BC0047EA69 /* tlazy_instance.h */,
+				556E43591B6A53BC0047EA69 /* tmessage_loop.cpp */,
+				556E435A1B6A53BC0047EA69 /* tmessage_loop.h */,
+				556E435B1B6A53BC0047EA69 /* tmessage_loop_libevent.cpp */,
+				556E435C1B6A53BC0047EA69 /* tmessage_loop_libevent.h */,
+				556E435D1B6A53BC0047EA69 /* tmessage_pump.h */,
+				556E435E1B6A53BC0047EA69 /* tmessage_pump_default.cpp */,
+				556E435F1B6A53BC0047EA69 /* tmessage_pump_default.h */,
+				556E43601B6A53BC0047EA69 /* trun_loop.cpp */,
+				556E43611B6A53BC0047EA69 /* trun_loop.h */,
+			);
+			path = MessageLoop;
+			sourceTree = "<group>";
+		};
+		556E43621B6A53BC0047EA69 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				556E43631B6A53BC0047EA69 /* tdispatch.cpp */,
+				556E43641B6A53BC0047EA69 /* tdispatch.h */,
+				556E43651B6A53BC0047EA69 /* tthread.cpp */,
+				556E43661B6A53BC0047EA69 /* tthread.h */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		556E43671B6A53BC0047EA69 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				556E43681B6A53BC0047EA69 /* ttime.cpp */,
+				556E43691B6A53BC0047EA69 /* ttime.h */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		556E43381B6A53660047EA69 /* dispatch-lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556E434D1B6A53660047EA69 /* Build configuration list for PBXNativeTarget "dispatch-lite" */;
+			buildPhases = (
+				556E43351B6A53660047EA69 /* Sources */,
+				556E43361B6A53660047EA69 /* Frameworks */,
+				556E43371B6A53660047EA69 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dispatch-lite";
+			productName = "dispatch-lite";
+			productReference = 556E43391B6A53660047EA69 /* libdispatch-lite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		556E43431B6A53660047EA69 /* dispatch-liteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556E43501B6A53660047EA69 /* Build configuration list for PBXNativeTarget "dispatch-liteTests" */;
+			buildPhases = (
+				556E43401B6A53660047EA69 /* Sources */,
+				556E43411B6A53660047EA69 /* Frameworks */,
+				556E43421B6A53660047EA69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				556E43471B6A53660047EA69 /* PBXTargetDependency */,
+			);
+			name = "dispatch-liteTests";
+			productName = "dispatch-liteTests";
+			productReference = 556E43441B6A53660047EA69 /* dispatch-liteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		556E43311B6A53660047EA69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = tencent;
+				TargetAttributes = {
+					556E43381B6A53660047EA69 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					556E43431B6A53660047EA69 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 556E43341B6A53660047EA69 /* Build configuration list for PBXProject "dispatch-lite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 556E43301B6A53660047EA69;
+			productRefGroup = 556E433A1B6A53660047EA69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				556E43381B6A53660047EA69 /* dispatch-lite */,
+				556E43431B6A53660047EA69 /* dispatch-liteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		556E43421B6A53660047EA69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		556E43351B6A53660047EA69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556E436F1B6A53BC0047EA69 /* tdispatch.cpp in Sources */,
+				556E43701B6A53BC0047EA69 /* tthread.cpp in Sources */,
+				556E436E1B6A53BC0047EA69 /* trun_loop.cpp in Sources */,
+				556E436D1B6A53BC0047EA69 /* tmessage_pump_default.cpp in Sources */,
+				556E436B1B6A53BC0047EA69 /* tmessage_loop.cpp in Sources */,
+				556E43711B6A53BC0047EA69 /* ttime.cpp in Sources */,
+				556E436C1B6A53BC0047EA69 /* tmessage_loop_libevent.cpp in Sources */,
+				556E436A1B6A53BC0047EA69 /* tlazy_instance.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556E43401B6A53660047EA69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556E43731B6A53CA0047EA69 /* testdispatch.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		556E43471B6A53660047EA69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 556E43381B6A53660047EA69 /* dispatch-lite */;
+			targetProxy = 556E43461B6A53660047EA69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		556E434B1B6A53660047EA69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		556E434C1B6A53660047EA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		556E434E1B6A53660047EA69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Frameworks/Libevent/include",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+			};
+			name = Debug;
+		};
+		556E434F1B6A53660047EA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Frameworks/Libevent/include",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+			};
+			name = Release;
+		};
+		556E43511B6A53660047EA69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Frameworks/Libevent/include",
+				);
+				INFOPLIST_FILE = "dispatch-liteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+			};
+			name = Debug;
+		};
+		556E43521B6A53660047EA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Frameworks/Libevent/include",
+				);
+				INFOPLIST_FILE = "dispatch-liteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		556E43341B6A53660047EA69 /* Build configuration list for PBXProject "dispatch-lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556E434B1B6A53660047EA69 /* Debug */,
+				556E434C1B6A53660047EA69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556E434D1B6A53660047EA69 /* Build configuration list for PBXNativeTarget "dispatch-lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556E434E1B6A53660047EA69 /* Debug */,
+				556E434F1B6A53660047EA69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		556E43501B6A53660047EA69 /* Build configuration list for PBXNativeTarget "dispatch-liteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556E43511B6A53660047EA69 /* Debug */,
+				556E43521B6A53660047EA69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 556E43311B6A53660047EA69 /* Project object */;
+}
