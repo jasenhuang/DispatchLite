@@ -33,7 +33,7 @@
 - (void)testExample {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
-    Lite::Dispatch::Init();
+    dispatch_init();
     NeedsToWaitForBlock();
     for (NSInteger i =0 ; i < 10; ++i){
         dispatch_logic_async([=]{
