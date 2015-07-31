@@ -109,6 +109,11 @@ Thread* Dispatch::CreateThread(const char* name, ID identifier)
     globals.threads[identifier] = thread;
     return thread;
 }
+    
+    Thread* Dispatch::GlobalThread()
+    {
+        return NULL;
+    }
 
 bool Dispatch::PostTask(ID identifier, const std::function<void()>& task)
 {

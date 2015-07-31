@@ -22,6 +22,8 @@ namespace Lite {
 #define dispatch_io_async(x) Lite::Dispatch::PostTask(Lite::Dispatch::IO, x)
 #define dispatch_async(thread, x) thread->message_loop()->PostTask(x)
 #define dispatch_after(milisecond, x) Lite::MessageLoop::current()->PostDelayedTask(x, Lite::TimeDelta::FromMilliseconds(milisecond))
+
+#define dispatch_get_global()
     
 #else
 
@@ -30,6 +32,8 @@ namespace Lite {
 #define dispatch_io_async(x) Dispatch::PostTask(Dispatch::IO, x)
 #define dispatch_async(thread, x) thread->message_loop()->PostTask(x)
 #define dispatch_after(milisecond, x) MessageLoop::current()->PostDelayedTask(x, TimeDelta::FromMilliseconds(milisecond))
+
+#define dispatch_get_global() 
     
 #endif
 
@@ -43,7 +47,7 @@ public:
         IO,
         // This is the thread that interacts with the db.
         DB,
-        // This is the thread that process GY logic.
+        // This is the thread that process logic.
         LOGIC,
         // count
         ID_COUNT
@@ -53,6 +57,7 @@ public:
     static void Stop();
 
     static Thread* CreateThread(const char* name);
+    static Thread* GlobalThread();
     
     static bool PostTask(ID identifier, const std::function<void()>& task);
     static bool PostDelayedTask(ID identifier, const std::function<void()>& task, TimeDelta delay);

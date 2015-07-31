@@ -20,7 +20,7 @@ namespace Lite {
 #endif
 
 class RunLoop;
-
+    
 struct PendingTask
 {
     PendingTask() = delete;
@@ -61,7 +61,7 @@ private:
     
     int next_sequence_num_;
 };
-
+class MessagePumpLibevent;
 class MessageLoop : public MessagePump::Delegate {
 public:
     
@@ -93,6 +93,8 @@ public:
     void Quit();
     
     void QuitWhenIdle();
+    
+    MessagePumpLibevent* PumpIO();
     
 private:
     friend class IncomingTaskQueue;

@@ -148,15 +148,15 @@
 		556E43561B6A53BC0047EA69 /* MessageLoop */ = {
 			isa = PBXGroup;
 			children = (
-				556E43571B6A53BC0047EA69 /* tlazy_instance.cpp */,
-				556E43581B6A53BC0047EA69 /* tlazy_instance.h */,
-				556E43591B6A53BC0047EA69 /* tmessage_loop.cpp */,
-				556E435A1B6A53BC0047EA69 /* tmessage_loop.h */,
 				556E435B1B6A53BC0047EA69 /* tmessage_loop_libevent.cpp */,
 				556E435C1B6A53BC0047EA69 /* tmessage_loop_libevent.h */,
-				556E435D1B6A53BC0047EA69 /* tmessage_pump.h */,
 				556E435E1B6A53BC0047EA69 /* tmessage_pump_default.cpp */,
 				556E435F1B6A53BC0047EA69 /* tmessage_pump_default.h */,
+				556E43591B6A53BC0047EA69 /* tmessage_loop.cpp */,
+				556E435A1B6A53BC0047EA69 /* tmessage_loop.h */,
+				556E435D1B6A53BC0047EA69 /* tmessage_pump.h */,
+				556E43571B6A53BC0047EA69 /* tlazy_instance.cpp */,
+				556E43581B6A53BC0047EA69 /* tlazy_instance.h */,
 				556E43601B6A53BC0047EA69 /* trun_loop.cpp */,
 				556E43611B6A53BC0047EA69 /* trun_loop.h */,
 			);
@@ -480,6 +480,7 @@
 				556E434F1B6A53660047EA69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		556E43501B6A53660047EA69 /* Build configuration list for PBXNativeTarget "dispatch-liteTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +489,7 @@
 				556E43521B6A53660047EA69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
