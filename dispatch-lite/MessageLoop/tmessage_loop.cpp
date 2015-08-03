@@ -110,15 +110,13 @@ MessageLoop::MessageLoop(Type type)
     if (type == MessageLoop::TYPE_UI) {
         assert(0);//UI MessageLoop is not implement yet;
     }
-    if (type == MessageLoop::TYPE_IO){
 #ifdef USE_EVENT
+    if (type == MessageLoop::TYPE_IO){
         pump = new MessagePumpLibevent();
-#else
-        assert(0);// messageloop for io need libevent
+        // messageloop for io use libevent
+    }else
 #endif
-    }else{
-        pump = new MessagePumpDefault();
-    }
+    pump = new MessagePumpDefault();
     pump_.reset(pump);
 }
 MessageLoop::~MessageLoop()
@@ -163,13 +161,14 @@ void MessageLoop::PostNonNestableDelayedTask(const std::function<void()>& task, 
 {
     incoming_task_queue_->AddToIncomingQueue(task, delay, false);
 }
-    
+#ifdef USE_EVENT
 MessagePumpLibevent* MessageLoop::PumpIO()
 {
     MessagePumpLibevent* pump = dynamic_cast<MessagePumpLibevent*>(pump_.get());
     assert(pump);
     return pump;
 }
+#endif
     
 //在thread的main函数里调用
 void MessageLoop::Run()

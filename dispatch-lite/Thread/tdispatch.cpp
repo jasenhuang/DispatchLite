@@ -27,6 +27,7 @@ struct ThreadGlobals{
     
     ThreadGlobals()
     :initialized(false){
+        memset(threads, 0, sizeof(Thread*) * Dispatch::ID_COUNT);
     }
     bool initialized;
     std::mutex lock;
@@ -50,10 +51,8 @@ void Dispatch::Init()
         MessageLoop::Type type = MessageLoop::TYPE_DEFAULT;
         switch (thread_id) {
             case IO:
-#ifdef  USE_EVENT
                 thread = CreateThread(g_thread_names[IO], IO);
                 type = MessageLoop::TYPE_IO;
-#endif
                 break;
             case DB:
                 thread = CreateThread(g_thread_names[DB], DB);

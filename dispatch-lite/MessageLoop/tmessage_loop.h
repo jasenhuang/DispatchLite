@@ -94,7 +94,9 @@ public:
     
     void QuitWhenIdle();
     
+#ifdef USE_EVENT
     MessagePumpLibevent* PumpIO();
+#endif
     
 private:
     friend class IncomingTaskQueue;

@@ -46,7 +46,7 @@ defined(OS_NACL)
 #endif
 
 #ifndef USE_EVENT
-#define USE_EVENT
+//#define USE_EVENT
 #endif
 
 #define DISALLOW_COPY_AND_ASSIGN(TypeName) \
