@@ -10,10 +10,6 @@
 #import <XCTest/XCTest.h>
 #include "tdispatch.h"
 
-#define NeedsToWaitForBlock() __block BOOL blockFinished = NO
-#define BlockFinished() blockFinished = YES
-#define WaitForBlock() while (CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0, true) && !blockFinished)
-
 @interface testdispatch : XCTestCase
 
 @end
@@ -33,8 +29,8 @@
 - (void)testExample {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
+
     dispatch_init();
-    NeedsToWaitForBlock();
     for (NSInteger i =0 ; i < 10; ++i){
         dispatch_logic_async([=]{
             NSLog(@"hello world [%@]", @(i));
@@ -49,7 +45,8 @@
             NSLog(@"hello world [%@]", @(i));
         }, Lite::TimeDelta::FromSeconds(10 - i));
     }
-    WaitForBlock();
+    sleep(20);
+    dispatch_stop();
 }
 
 - (void)testPerformanceExample {
