@@ -24,7 +24,7 @@ namespace Lite {
 #define dispatch_async(thread, x) thread->message_loop()->PostTask(x)
 #define dispatch_after(milisecond, x) Lite::MessageLoop::current()->PostDelayedTask(x, Lite::TimeDelta::FromMilliseconds(milisecond))
 
-#define dispatch_get_global()
+#define dispatch_get_global() Lite::Dispatch::GlobalThread()
     
 #else
 
@@ -35,7 +35,7 @@ namespace Lite {
 #define dispatch_async(thread, x) thread->message_loop()->PostTask(x)
 #define dispatch_after(milisecond, x) MessageLoop::current()->PostDelayedTask(x, TimeDelta::FromMilliseconds(milisecond))
 
-#define dispatch_get_global() 
+#define dispatch_get_global() Dispatch::GlobalThread()
     
 #endif
 
