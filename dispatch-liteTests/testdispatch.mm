@@ -34,7 +34,7 @@
     for (NSInteger i =0 ; i < 10; ++i){
         dispatch_logic_async([=]{
             NSLog(@"hello world [%@]", @(i));
-            dispatch_after(1000 * (10 - i) , [=]{
+            dispatch_current_after(1000 * (10 - i) , [=]{
                 NSLog(@"hello world [%@]", @(i));
             });
         });
