@@ -74,7 +74,7 @@ void MessagePumpDefault::ScheduleWork() {
     // loop wakes up.
     //event_.Signal();
     std::unique_lock<std::mutex> lock(mutex_);
-    event_.notify_all();
+    event_.notify_one();
 }
 
 void MessagePumpDefault::ScheduleDelayedWork(const TimeTicks& delayed_work_time) {
