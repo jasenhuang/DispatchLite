@@ -15,12 +15,12 @@ Usage:
     });
     
     /* dispatch on specific thread */
-    dispatch_async(thread, [=]{
+    dispatch_thread_async(thread, [=]{
         //your code here
     });
 	
 	/* dispatch on current thread after 500ms */
-    dispatch_after(500, [=]{
+    dispatch_current_after(500, [=]{
         //your code here
     });
 
