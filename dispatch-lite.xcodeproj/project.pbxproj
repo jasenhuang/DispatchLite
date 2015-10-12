@@ -17,7 +17,8 @@
 		556E43701B6A53BC0047EA69 /* tthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43651B6A53BC0047EA69 /* tthread.cpp */; };
 		556E43711B6A53BC0047EA69 /* ttime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43681B6A53BC0047EA69 /* ttime.cpp */; };
 		556E43731B6A53CA0047EA69 /* testdispatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556E43721B6A53CA0047EA69 /* testdispatch.mm */; };
-		556E43751B6A544F0047EA69 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E43741B6A544F0047EA69 /* libevent.a */; };
+		559C032C1BCB604F00721364 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559C032B1BCB604F00721364 /* libevent.a */; settings = {ASSET_TAGS = (); }; };
+		559C032D1BCB611900721364 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559C032B1BCB604F00721364 /* libevent.a */; };
 		55E9BC001BA2D9FA001C7357 /* tmessage_loop_libevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E435B1B6A53BC0047EA69 /* tmessage_loop_libevent.cpp */; };
 		55E9BC021BA2D9FA001C7357 /* tmessage_pump_default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E435E1B6A53BC0047EA69 /* tmessage_pump_default.cpp */; };
 		55E9BC041BA2D9FA001C7357 /* tmessage_loop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43591B6A53BC0047EA69 /* tmessage_loop.cpp */; };
@@ -33,7 +34,6 @@
 		55E9BC151BA2DA27001C7357 /* tdispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 556E43641B6A53BC0047EA69 /* tdispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55E9BC161BA2DA27001C7357 /* tthread.h in Headers */ = {isa = PBXBuildFile; fileRef = 556E43661B6A53BC0047EA69 /* tthread.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55E9BC171BA2DA27001C7357 /* ttime.h in Headers */ = {isa = PBXBuildFile; fileRef = 556E43691B6A53BC0047EA69 /* ttime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55E9BC5E1BA2DB6E001C7357 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E43741B6A544F0047EA69 /* libevent.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +82,7 @@
 		556E43681B6A53BC0047EA69 /* ttime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ttime.cpp; sourceTree = "<group>"; };
 		556E43691B6A53BC0047EA69 /* ttime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttime.h; sourceTree = "<group>"; };
 		556E43721B6A53CA0047EA69 /* testdispatch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = testdispatch.mm; sourceTree = "<group>"; };
-		556E43741B6A544F0047EA69 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = ../Frameworks/Libevent/lib/libevent.a; sourceTree = "<group>"; };
+		559C032B1BCB604F00721364 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent.a; sourceTree = "<group>"; };
 		55E9BBE51BA2D977001C7357 /* DispatchLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DispatchLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559C032C1BCB604F00721364 /* libevent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556E43751B6A544F0047EA69 /* libevent.a in Frameworks */,
 				556E43451B6A53660047EA69 /* libdispatch-lite.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55E9BC5E1BA2DB6E001C7357 /* libevent.a in Frameworks */,
+				559C032D1BCB611900721364 /* libevent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +136,7 @@
 		556E433B1B6A53660047EA69 /* dispatch-lite */ = {
 			isa = PBXGroup;
 			children = (
+				559C030B1BCB603500721364 /* libevent */,
 				556E43531B6A53BC0047EA69 /* Base */,
 				556E43561B6A53BC0047EA69 /* MessageLoop */,
 				556E43621B6A53BC0047EA69 /* Thread */,
@@ -148,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				556E43721B6A53CA0047EA69 /* testdispatch.mm */,
-				556E43741B6A544F0047EA69 /* libevent.a */,
 				556E43491B6A53660047EA69 /* Supporting Files */,
 			);
 			path = "dispatch-liteTests";
@@ -207,6 +207,14 @@
 				556E43691B6A53BC0047EA69 /* ttime.h */,
 			);
 			path = Time;
+			sourceTree = "<group>";
+		};
+		559C030B1BCB603500721364 /* libevent */ = {
+			isa = PBXGroup;
+			children = (
+				559C032B1BCB604F00721364 /* libevent.a */,
+			);
+			name = libevent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,17 +480,18 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/Frameworks/Libevent/include",
+					"$(SRCROOT)/dispatch-lite",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
+					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/dispatch-lite";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Debug;
@@ -493,17 +502,18 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/Frameworks/Libevent/include",
+					"$(SRCROOT)/dispatch-lite",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
+					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/dispatch-lite";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Release;
@@ -523,7 +533,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/Frameworks/Libevent/include",
+					"$(SRCROOT)/dispatch-lite",
 				);
 				INFOPLIST_FILE = "dispatch-liteTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -532,7 +542,7 @@
 					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/dispatch-lite";
 			};
 			name = Debug;
 		};
@@ -547,7 +557,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/Frameworks/Libevent/include",
+					"$(SRCROOT)/dispatch-lite",
 				);
 				INFOPLIST_FILE = "dispatch-liteTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -556,7 +566,7 @@
 					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/dispatch-lite";
 			};
 			name = Release;
 		};
@@ -576,7 +586,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/Frameworks/Libevent/include",
+					"$(SRCROOT)/dispatch-lite",
 				);
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -584,11 +594,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
+					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/dispatch-lite";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -606,7 +617,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/Frameworks/Libevent/include",
+					"$(SRCROOT)/dispatch-lite",
 				);
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -614,11 +625,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
+					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/Libevent/include";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/dispatch-lite";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -661,6 +673,7 @@
 				55E9BBF91BA2D977001C7357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
