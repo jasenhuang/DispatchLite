@@ -17,7 +17,7 @@
 		556E43701B6A53BC0047EA69 /* tthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43651B6A53BC0047EA69 /* tthread.cpp */; };
 		556E43711B6A53BC0047EA69 /* ttime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E43681B6A53BC0047EA69 /* ttime.cpp */; };
 		556E43731B6A53CA0047EA69 /* testdispatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 556E43721B6A53CA0047EA69 /* testdispatch.mm */; };
-		559C032C1BCB604F00721364 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559C032B1BCB604F00721364 /* libevent.a */; settings = {ASSET_TAGS = (); }; };
+		559C032C1BCB604F00721364 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559C032B1BCB604F00721364 /* libevent.a */; };
 		559C032D1BCB611900721364 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559C032B1BCB604F00721364 /* libevent.a */; };
 		55E9BC001BA2D9FA001C7357 /* tmessage_loop_libevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E435B1B6A53BC0047EA69 /* tmessage_loop_libevent.cpp */; };
 		55E9BC021BA2D9FA001C7357 /* tmessage_pump_default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556E435E1B6A53BC0047EA69 /* tmessage_pump_default.cpp */; };
@@ -484,7 +484,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
 					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				ONLY_ACTIVE_ARCH = NO;
@@ -506,7 +505,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
 					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				ONLY_ACTIVE_ARCH = NO;
@@ -522,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -539,7 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
+					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/dispatch-lite";
@@ -550,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -563,7 +563,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
+					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/dispatch-lite";
@@ -593,7 +593,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
 					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -624,7 +623,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/Libevent/lib",
 					"$(PROJECT_DIR)/dispatch-lite",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
