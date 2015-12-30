@@ -4,8 +4,6 @@ a dispatcher like gcd for c++
 
 Usage:
 
- pod 'DispatchLite', '~> 0.0.2'
-
 	/* init dispatch first */
 	dispatch_init();
 	
